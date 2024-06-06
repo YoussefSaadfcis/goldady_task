@@ -1,23 +1,27 @@
 # setting up
-1. create the database:
+1. create database 'blog' with default username and password 
+```sql
+CREATE DATABASE blog;
+```
+2. create the database scema:
     ```bash
     php artisan migrate
     ```
 
-2. create dummy data:
+3. create dummy data:
     ```bash
     php artisan db:seed --class=DatabaseSeeder
     ```
 
-3. create a personal access client:
+4. create a personal access client:
     ```bash
     php artisan passport:client --personal
     ```
-4. start server
+5. start server
     ```bash
     php artisan serve
     ```
-5. run loging unit test
+6. run loging unit test
    ```bash
    php artisan test
    ```
